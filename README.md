@@ -19,9 +19,6 @@ This project serves as a centralized archive for academic exercises, personal pr
 ### C & C++
 Focusing on manual memory management, pointer arithmetic, and the transition from procedural to object-oriented programming. Includes CLI tools and algorithmic implementations.
 
-### Web Architecture
-Implementing modern front-ends using React and JSX, with a focus on component architecture and clean state management.
-
 ## Project Structure
 
 * `/C` — Procedural programming and core logic.
