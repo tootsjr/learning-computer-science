@@ -1,30 +1,47 @@
-# Computer Science
-
-A repository documenting my progression through computer science fundamentals, focusing on low-level systems and modern web architecture.
-
-## Overview
-
-This project serves as a centralized archive for academic exercises, personal projects, and experiments in memory management and systems design.
-
-## Technical Environment
-
-* **Editor:** Neovim (NvChad)
-* **Terminal:** WezTerm
-* **Font:** FantasqueSansM Nerd Font
-* **Shell:** Starship
-* **Compiler:** Clang / GCC (Apple Silicon)
-
-## Core Domains
-
-### C & C++
-Focusing on manual memory management, pointer arithmetic, and the transition from procedural to object-oriented programming. Includes CLI tools and algorithmic implementations.
-
-## Project Structure
-
-* `/C` — Procedural programming and core logic.
-* `/C++` — OOP, templates, and systems experiments.
-* `/Projects` — Finished utilities and CLI applications.
+# COMPUTER SCIENCE
+**CS50x Harvard University | Herbert Schildt C++ Curriculum**
 
 ---
 
-**2025 | learning-computer-science**
+<details open>
+<summary><b>I. CORE CURRICULUM & LINEAGE</b></summary>
+<br>
+
+| Track | Primary Source | Status |
+| :--- | :--- | :--- |
+| **Foundations** | CS50: Introduction to Computer Science | In Progress |
+| **Systems** | C++: A Beginner's Guide (Schildt) | Active |
+| **Logic** | Computational Thinking & Problem Sets | Continuous |
+
+</details>
+
+---
+
+<details>
+<summary><b>II. TECHNICAL ARCHIVE</b></summary>
+<br>
+
+#### SYSTEMS PROGRAMMING (C/C++)
+* **Variable Scope & Memory:** Implementation of reference-based function logic to avoid global state.
+* **Control Flow Optimization:** Migration from nested `if-else` chains to `switch` statements for CLI menus.
+* **Precision Management:** Utilizing `double` types and constant factors for unit conversion reliability.
+
+#### FRONT-END ARCHITECTURE
+* **Component Logic:** React implementation using JSX and modern state hooks.
+* **Syntax Support:** Advanced Tree-sitter integration for multilingual highlighting and AST parsing.
+
+</details>
+
+---
+
+<details>
+<summary><b>III. ENVIRONMENT & TOOLING</b></summary>
+<br>
+
+```yaml
+Terminal:  WezTerm / Vesper Protocol
+Editor:    Neovim (NvChad Distribution)
+Compiler:  Clang++ (C++20 Standard)
+LSP:       clangd / typescript-language-server
+Formatter: Clang-Format (LLVM Preset)
+Font:      FantasqueSansM Nerd Font (Bold / 900)
