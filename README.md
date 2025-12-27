@@ -9,7 +9,7 @@
 
 | Track | Primary Source | Status |
 | :--- | :--- | :--- |
-| **Foundations** | CS50: Introduction to Computer Science | In Progress |
+| **Foundations** | CS50: Introduction to Computer Science | Basics of C |
 | **Systems** | C++: A Beginner's Guide (Schildt) | Active |
 | **Logic** | Computational Thinking & Problem Sets | Continuous |
 
@@ -20,16 +20,24 @@
 <details>
 <summary><b>II. TECHNICAL ARCHIVE</b></summary>
 <br>
+#### PHASE 1: FUNDAMENTALS & CONTROL
+* **Data Types & Expressions:** Working with `double` precision and arithmetic operators.
+* **Program Control Statements:** Mastery of `if-else-if` ladders and `switch` selection logic.
+* **Function Architecture:** Understanding scope, lifetime, and passing parameters by reference (`&`).
 
-#### SYSTEMS PROGRAMMING (C/C++)
-* **Variable Scope & Memory:** Implementation of reference-based function logic to avoid global state.
-* **Control Flow Optimization:** Migration from nested `if-else` chains to `switch` statements for CLI menus.
-* **Precision Management:** Utilizing `double` types and constant factors for unit conversion reliability.
+#### PHASE 2: DATA STRUCTURES & POINTERS
+* **Arrays & Strings:** Manual manipulation of character arrays and multi-dimensional structures.
+* **The Pointer System:** Memory addresses, pointer arithmetic, and base-level memory management.
 
-#### FRONT-END ARCHITECTURE
-* **Component Logic:** React implementation using JSX and modern state hooks.
-* **Syntax Support:** Advanced Tree-sitter integration for multilingual highlighting and AST parsing.
+#### PHASE 3: OBJECT-ORIENTED PROGRAMMING
+* **Classes & Objects:** Encapsulation, constructors, and destructors.
+* **Operator Overloading:** Defining custom behavior for standard operators.
+* **Inheritance & Polymorphism:** Building hierarchical systems and virtual functions.
 
+#### PHASE 4: ADVANCED SYSTEMS
+* **The I/O System:** File handling and stream customization.
+* **Exception Handling:** Robust error trapping using `try`, `catch`, and `throw`.
+* **Templates:** Generic programming for reusable type-independent code.
 </details>
 
 ---
@@ -42,6 +50,6 @@
 Terminal:  WezTerm / Vesper Protocol
 Editor:    Neovim (NvChad Distribution)
 Compiler:  Clang++ (C++20 Standard)
-LSP:       clangd / typescript-language-server
+LSP:       clangd 
 Formatter: Clang-Format (LLVM Preset)
-Font:      FantasqueSansM Nerd Font (Bold / 900)
+Font:      FantasqueSansM Nerd Font 
