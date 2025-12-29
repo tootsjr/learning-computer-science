@@ -10,7 +10,7 @@ int main() {
   do {
 
     int choice{};
-    std::cout << "Select difficulty : 1. Easy, 2. Medium, 3. Hard ";
+    std::cout << "Select difficulty : 1. Easy, 2. Medium, 3. Hard : ";
     if (!(std::cin >> choice)) {
       std::cin.clear();
       std::cin.ignore(10000, '\n');
@@ -56,24 +56,39 @@ void play(int high) {
 
   std::cout << "Guess the Number between 1 and " << high << "! ";
 
+  int tries{0};
+  int lives{5};
+
   do {
+
+    if (lives < 0) {
+      std::cout << "\n \n" << "You have ran out of lives !" << "\n";
+      return;
+    }
 
     if (!(std::cin >> guess)) {
       std::cin.clear();
       std::cin.ignore(10000, '\n');
-      std::cout << "Invalid input. Please enter a number: ";
+      std::cout << "Invalid input. Please enter a number: " << '\n';
       continue;
     }
 
+    tries += 1;
+    lives--;
+
     if (guess > secret) {
       high = guess;
-      std::cout << "Too high guess again ! It's between " << low << " and "
-                << high << "! ";
+      std::cout << '\n'
+                << "Too high guess again ! It's between " << low << " and "
+                << high << "! " << '\n'
+                << tries << " tries. Try again : ";
 
     } else if (guess < secret) {
       low = guess;
-      std::cout << "Too low guess again ! It's between " << low << " and "
-                << high << "! ";
+      std::cout << '\n'
+                << "Too low guess again ! It's between " << low << " and "
+                << high << "! " << '\n'
+                << tries << " tries. Try again : ";
     }
 
   } while (guess != secret);
