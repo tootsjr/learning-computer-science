@@ -1,13 +1,13 @@
 #include <iostream>
 
-int main (){
+int main() {
   std::cout << "How many earth years ? ";
   double earthYears{};
   std::cin >> earthYears;
 
-  double jovianYears { earthYears * 12 };
+  double jovianYears{earthYears * 12};
 
-  std::cout << jovianYears; 
+  std::cout << jovianYears;
 
   return 0;
 }
