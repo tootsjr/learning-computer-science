@@ -59,10 +59,16 @@ void play(int high) {
   int tries{0};
   int lives{5};
 
+  std::vector<int> history;
+
   do {
 
     if (lives < 0) {
-      std::cout << "\n \n" << "You have ran out of lives !" << "\n";
+      std::cout << "\n \n"
+                << "You have ran out of lives " << "These were your guesses ";
+      for (int g : history) {
+        std::cout << g << " ";
+      }
       return;
     }
 
@@ -72,6 +78,8 @@ void play(int high) {
       std::cout << "Invalid input. Please enter a number: " << '\n';
       continue;
     }
+
+    history.push_back(guess);
 
     tries += 1;
     lives--;
@@ -93,5 +101,9 @@ void play(int high) {
 
   } while (guess != secret);
 
-  std::cout << "You have guess correctly ! It was " << secret << '\n';
+  std::cout << "You have guess correctly ! It was " << secret
+            << "These were your guesses: ";
+  for (int g : history) {
+    std::cout << g << " ";
+  }
 }
