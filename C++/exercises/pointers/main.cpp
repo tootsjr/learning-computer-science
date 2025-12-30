@@ -1,8 +1,7 @@
 #include <iostream>
 
-int broken_refill(int a) {
+void broken_refill(int a) {
   a = 100; // Changes a local COPY
-  return a;
 }
 
 void real_refill(int *p) {

@@ -106,4 +106,5 @@ void play(int high) {
   for (int g : history) {
     std::cout << g << " ";
   }
+  std::cout << std::endl;
 }
