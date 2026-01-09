@@ -24,7 +24,7 @@ double kilogramsToPounds(double kilograms) {
 
 void displayMenu() {
 
-  std::cout << "1. celsius to fahrenheit";
-  std::cout << "2. meters to feet";
-  std::cout << "3. kilograms to pounds";
+  std::cout << "1. celsius to fahrenheit" << '\n';
+  std::cout << "2. meters to feet" << '\n';
+  std::cout << "3. kilograms to pounds" << '\n';
 }
