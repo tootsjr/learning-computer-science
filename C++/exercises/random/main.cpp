@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <vector>
 
 void play(int high);
 
@@ -63,7 +64,7 @@ void play(int high) {
 
   do {
 
-    if (lives < 0) {
+    if (lives <= 0) {
       std::cout << "\n \n"
                 << "You have ran out of lives " << "These were your guesses ";
       for (int g : history) {
@@ -101,7 +102,7 @@ void play(int high) {
 
   } while (guess != secret);
 
-  std::cout << "You have guess correctly ! It was " << secret
+  std::cout << "You have guess correctly ! It was " << secret << '\n'
             << "These were your guesses: ";
   for (int g : history) {
     std::cout << g << " ";
