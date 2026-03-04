@@ -3,7 +3,6 @@
 void printTable(int start, int end, int step);
 
 int main() {
-
   std::cout << "What would you like to start at ? ";
   int start{};
   std::cin >> start;
