@@ -11,7 +11,9 @@ int main() {
 }
 
 void checkNum(int num) {
+
   if (num % 3 == 0 && num % 5 == 0) {
+
     std::cout << "FizzBuzz" << '\n';
   } else if (num % 3 == 0) {
     std::cout << "Fizz" << '\n';
