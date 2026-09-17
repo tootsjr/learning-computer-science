@@ -1,5 +1,5 @@
-kilometers = int(input("How far did you go ?: "))
-time = int(input("How long was your journey?: "))
+kilometers = int(input("How far did you go (in kilometers)?: "))
+time = int(input("How long was your journey (in minutes)?: "))
 
 time = time / 60
 
