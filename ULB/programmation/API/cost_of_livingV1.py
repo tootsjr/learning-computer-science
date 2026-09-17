@@ -15,7 +15,5 @@ def cost_of_living(salary, rent, cost_monthly):
 
     return 0
 
-def compare();
-
 
 cost_of_living(salary, rent, cost_monthly)
