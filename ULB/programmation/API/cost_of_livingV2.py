@@ -1,4 +1,4 @@
-from math import cos
+import math
 
 
 class country:
@@ -6,8 +6,6 @@ class country:
         self.salary = salary
         self.rent = rent
         self.cost_monthly = cost_monthly
-
-        salary = int(input("What is the average monthly salary of this country?: "))
 
     def cash_after_rent(self, salary, rent):
         cash_after_rent = salary - rent
@@ -20,4 +18,13 @@ class country:
         return savings
 
 
-first_country = country()
+first_country = country(
+    int(input("What is the average salary of this country ?: ")),
+    int(input("what is the average rent per month for a 50m flat")),
+    int(input("What is spent monthly on average on groceries?: ")),
+)
+second_country = country(
+    int(input("What is the average salary of this country ?: ")),
+    int(input("what is the average rent per month for a 50m flat")),
+    int(input("What is spent monthly on average on groceries?: ")),
+)
