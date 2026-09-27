@@ -2,7 +2,6 @@ import random
 
 NB_ESSAIS_MAX = 6
 secret = random.randint(0, 100)
-guess = 0
 
 while True:
     guess = int(input())
