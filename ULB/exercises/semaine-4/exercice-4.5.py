@@ -11,7 +11,7 @@ def rendre_monnaie(prix, vingt, dix, cinq, deux, un):
     for i in billets:
         rendu_billet[y] = rendu // i
         rendu -= rendu_billet[y] * i
-        print(rendu)
+        print(rendu) # for testing
         y += 1
     return (*rendu_billet,)
 
